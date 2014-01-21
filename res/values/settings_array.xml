@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="planets_array">
+		<item>Mercury</item>
+		<item>Venus</item>
+		<item>Earth</item>
+		<item>Mars</item>
+	</string-array>    
+	<string-array name="img_size_array">
+		<item>Small</item>
+		<item>Medium</item>
+		<item>Large</item>
+		<item>Extra-Large</item>
+	</string-array> 
+	<string-array name="img_color_array">
+		<item>Black</item>
+		<item>Blue</item>
+		<item>Gray</item>
+		<item>Green</item>
+	</string-array> 
+	<string-array name="img_type_array">
+		<item>Faces</item>
+		<item>Photos</item>
+		<item>Clip Art</item>
+		<item>Line Art</item>
+	</string-array> 
+</resources>

@@ -1,0 +1,111 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".ImageSettingsActivity" >
+    
+    <TextView
+        android:id="@+id/tvAdvSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="6sp"
+        android:text="Advanced Search Options"
+        android:textStyle="bold" />
+    
+    <TextView
+        android:id="@+id/tvImgSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tvAdvSettings"
+        android:layout_alignBottom="@+id/szSpinner"
+        android:layout_margin="4sp"
+        android:text="Image Size" />
+
+    <Spinner
+        android:id="@+id/szSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tvAdvSettings"
+        android:entries="@array/img_size_array"
+        android:prompt="@string/planets_prompt" />
+
+    <TextView
+        android:id="@+id/tvColorFilter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/szSpinner"
+        android:layout_margin="4sp"
+        android:layout_alignBottom="@+id/colorSpinner"
+        android:text="Color Filter" />
+
+    <Spinner
+        android:id="@+id/colorSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/szSpinner"
+        android:entries="@array/img_color_array"
+        android:prompt="@string/planets_prompt" />
+
+     <TextView
+        android:id="@+id/tvImageType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/colorSpinner"
+        android:layout_margin="4sp"
+        android:layout_alignBottom="@+id/imgTypeSpinner"
+        android:text="Image Type" />
+
+    <Spinner
+        android:id="@+id/imgTypeSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/colorSpinner"
+        android:entries="@array/img_type_array"
+        android:prompt="@string/planets_prompt" />
+
+    <TextView
+        android:id="@+id/tvSiteFilter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/imgTypeSpinner"
+        android:layout_margin="4sp"
+        android:layout_alignBottom="@+id/etSiteFilter"
+        android:text="Site Filter" />
+
+    <EditText
+        android:id="@+id/etSiteFilter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/imgTypeSpinner"
+        android:ems="10"
+        android:hint="example: google.com" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/btnImgSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/tvAdvSettings"
+        android:layout_below="@+id/tvSiteFilter"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="36dp"
+        android:onClick="onSelectSettings"
+        android:text="Done" />
+
+</RelativeLayout>
